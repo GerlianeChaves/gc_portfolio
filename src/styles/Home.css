@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh; /* Permite crescer conforme o conteúdo */
+    overflow-x: hidden; /* Impede rolagem lateral */
+    overflow-y: auto; /* Habilita rolagem vertical */
+    display: block; /* Remove o flex para permitir expansão normal */
+}
+
+.home_container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000427;
+    overflow: hidden; /* Garante que nada ultrapasse os limites */
+}
+
+.background_logo {
+    max-width: 75vw; /* Garante que a imagem não ultrapasse a largura */
+    max-height: 90vh; /* Garante que a imagem não ultrapasse a altura */
+    object-fit: contain; /* Mantém a proporção sem cortes */
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}

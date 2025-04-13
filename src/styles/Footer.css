@@ -1,0 +1,33 @@
+.footer {
+    background-color: rgb(254, 252, 255, 0.1);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer_text h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.footer_links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer_links a:hover {
+    color: #000427; /* Cor de destaque ao passar o mouse */
+}

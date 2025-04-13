@@ -1,0 +1,32 @@
+.academic{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.academic_title{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.academics_logos{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.academic_logo{
+    width: 120px;
+    height: auto;
+    opacity: 1;
+    transition: 0.3s, ease, opacity 0.3s ease;
+}
+
+.academic_logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}

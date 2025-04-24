@@ -1,4 +1,5 @@
-.navbar{
+/* CSS existente (que você já tem) */
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -9,14 +10,15 @@
     align-items: center;
     z-index: 1000;
 }
-.nav_links{
+
+.nav_links {
     list-style: none;
     display: flex;
     gap: 20px;
     padding: 0;
 }
 
-.nav_links li{
+.nav_links li {
     display: inline;
 }
 
@@ -29,9 +31,54 @@
     transition: color 0.3s ease;
 }
 
-.nav_links a:hover{
-    color: #000427;
-}
 .nav_links a:hover {
     color: #000427;
+}
+
+/* Media Query para telas menores (novo código responsivo) */
+@media (max-width: 768px) {
+    .nav_links {
+        display: none;  /* Oculta a lista de links */
+        flex-direction: column;  /* Alinha os itens verticalmente */
+        gap: 10px;
+        position: absolute;
+        top: 60px;  /* Posiciona o menu abaixo do navbar */
+        left: 0;
+        width: 100%;
+        background-color: rgb(26, 26, 26, 0.9); /* Fundo para o menu */
+        padding: 20px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    /* Ícone de menu (hambúrguer) */
+    .menu-icon {
+        display: block;  /* Mostra o ícone de menu */
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url('path/to/hamburger-icon.png'); /* Ícone do menu */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* Quando o menu hambúrguer for clicado, mostrar os links */
+    .navbar.active .nav_links {
+        display: flex;
+    }
+
+    .navbar.active .menu-icon {
+        background-image: url('path/to/close-icon.png'); /* Ícone para fechar o menu */
+    }
+}
+
+/* Estilo para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    .nav_links a {
+        font-size: 16px; /* Reduz a fonte */
+        padding: 8px 12px; /* Ajusta o padding */
+    }
 }

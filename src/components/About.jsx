@@ -28,6 +28,17 @@ function About() {
                         </a>
                     </div>
                     
+                    <div className="cv_links">
+                        <p>View my resume:</p>
+                        <a href="https://drive.google.com/file/d/1blP_5FzRKa36FOTE8TlcRNRi_6vRZTRQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            CV (English)
+                        </a> |{" "}
+                        <a href="https://drive.google.com/file/d/1bEwUGJhToUN1HqhmvdkcUoMHzadN8oFU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            CV (Português)
+                        </a>
+                    </div>
+
+
                 </div>
             </div> 
 

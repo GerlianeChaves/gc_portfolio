@@ -8,6 +8,7 @@
     background-color:rgb(254, 252, 255, 0.7);
     padding: 50px;
     color: black;
+    flex-wrap: wrap;
 }
 
 .about_content{
@@ -25,6 +26,9 @@
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: center;
 }
 
 .about_text{
@@ -60,3 +64,19 @@
     color: #1a1a1a;
 }
 
+.cv_links {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.cv_links a {
+    color: #000427;
+    text-decoration: none;
+    margin: 0 0.3rem;
+}
+
+.cv_links a:hover {
+    text-decoration: underline;
+    color: #1a1a1a;
+}
+ 

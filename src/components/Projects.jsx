@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import "../styles/Projects.css";
+import luca from "../assets/LUCA.gif";
+import ag from "../assets/interfaceAG.png";
+import isolation from "../assets/resultadoE_redes.png";
+import pibic from "../assets/identificao.png";
+import maze from "../assets/maze.gif";
+import tracker from "../assets/person.png";
 
 const projectsDev = [
     {
@@ -7,7 +13,7 @@ const projectsDev = [
         title: "LUCA – Independent Cinema Magazine",
         description: "Interactive website featuring independent cinema reports with responsive layout, clickable content cards, and dynamic HTML/CSS/JS structure.",
         link: "https://github.com/GerlianeChaves/RevistaLuca.git",
-        image: "/src/assets/LUCA.gif",
+        image: luca,
     },
 
     {
@@ -15,7 +21,7 @@ const projectsDev = [
         title: "Genetic Algorithm for TSP Optimization",
         description: "Solves the Traveling Salesman Problem using a genetic algorithm and local search strategy. Includes a Flask-based web interface for interactive input and result visualization.",
         link: "https://github.com/GerlianeChaves/AlgoritmoGenetico.git",
-        image: "/src/assets/interfaceAG.png",
+        image: ag,
     },
 
     {
@@ -23,7 +29,7 @@ const projectsDev = [
         title: "Anomaly Detection with Isolation Forest",
         description: "This project applies the Isolation Forest algorithm to detect anomalies in energy consumption data, utilizing datasets from UC Irvine and E-REDES. It visualizes detected anomalies, aiding in identifying unusual consumption patterns.",
         link: "https://github.com/GerlianeChaves/IsolationForest",
-        image: "/src/assets/resultadoE_redes.png",
+        image: isolation,
     },
 ];
 
@@ -33,7 +39,7 @@ const projectsRobotic = [
         title: "Jackal Person Detection using YOLO and ROS",
         description: "This project enables real-time person detection on a Jackal robot using YOLO and ROS, allowing the robot to autonomously avoid collisions with detected people.",
         link: "https://github.com/GerlianeChaves/PIBIC22_23.git",
-        image: "/src/assets/identificao.png",
+        image: pibic,
     },
 
     {
@@ -41,7 +47,7 @@ const projectsRobotic = [
         title: "Maze Navigation Algorithm with Dijkstra",
         description: "This project implements a maze navigation algorithm using Dijkstra's algorithm and graphs to find the shortest path between two points, visualized with Python.",
         link: "https://github.com/GerlianeChaves/Dijkstra.git",
-        image: "/src/assets/maze.gif",
+        image: maze,
     },
     
     {
@@ -49,13 +55,13 @@ const projectsRobotic = [
         title: "Live Person Tracker with YOLOv3",
         description: "This project tracks people in real-time using YOLOv3 and OpenCV, offering proximity detection and visualization via webcam or video processing.",
         link: "https://github.com/GerlianeChaves/LivePersonTracker.git",
-        image: "/src/assets/person.png",
+        image: tracker,
     },  
 
 ];
 
 function Projects(){
-    const [category, setCategory] = useState("dev");
+    const [category, setCategory] = useState("robotics");
 
     return(
         <section id="projects" className="projects_container">

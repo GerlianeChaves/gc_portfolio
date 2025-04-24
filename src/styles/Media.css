@@ -9,11 +9,14 @@
     margin-bottom: 20px;
     color: black;
 }
+
 .media_carousel{
-    width: 80%;
+    width: 95vw;
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
+    padding: 0 2vw;
+
 }
 
 .media_slide{

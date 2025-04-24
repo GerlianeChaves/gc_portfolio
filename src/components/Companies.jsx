@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Companies.css";
-import cesar from "../assets/cesar.png";
-import uw from "../assets/UW.jpg";
-import wizzi from "../assets/company.png";
-import dvm from "../assets/dvm.jpeg";
+import cesar from "../assets/CESAR.png";
+import uw from "../assets/uwlogo.png";
+import wizzi from "../assets/WIZZI.png";
+import dvm from "../assets/DVM.png";
 
 
 function Companies() {
